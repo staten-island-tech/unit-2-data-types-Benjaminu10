@@ -8,7 +8,7 @@
 # else:
 #     print('cold')
 
-number=7
+number =2
 if (number %2) == 0:
      print('Even')
 else:
