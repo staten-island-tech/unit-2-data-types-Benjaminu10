@@ -29,13 +29,23 @@
 #     bill =+ 1.25*bill
 #     print(bill)
 
-def find_factors(x):
-    factors = []
-    for i in range(1, x + 1):
-        if x % i == 0:
-            factors.append(i)
-    return factors
+# def find_factors(x):
+#     factors = []
+#     for i in range(1, x + 1):
+#         if x % i == 0:
+#             factors.append(i)
+#     return factors
+
+def find_factors(num):
+     factors = []
+     for i in range(1, num + 1):
+         if num % i == 0:
+             factors.append(i)
+     return factors
 
 number = int(input("Insert a number. "))
 factors = find_factors(number)
 print(factors)
+
+def gcf(x,y):
+    W
