@@ -29,12 +29,12 @@
 #     bill =+ 1.25*bill
 #     print(bill)
 
-def find_factors(x):
-    factors = []
-    for i in range(1, x + 1):
-        if x % i == 0:
-            factors.append(i)
-    return factors
+# def find_factors(x):
+#     factors = []
+#     for i in range(1, x + 1):
+#         if x % i == 0:
+#             factors.append(i)
+#     return factors
 
 # def find_factors(num):
 #      factors = []
@@ -43,18 +43,26 @@ def find_factors(x):
 #              factors.append(i)
 #      return factors
 
-number = int(input("Insert a number to determine it's factors. "))
-factors = find_factors(number)
-print(factors)
-
+commonfactors = []
 def find_factors(x):
     factors = []
     for i in range(1, x + 1):
         if x % i == 0:
             factors.append(i)
-
-def find_factors(y):
+        ret
+def find_factors2(y):
     factors2 = []
     for i in range(1, y + 1):
         if y % i == 0:
-            factors.append(i)
+            factors2.append(i)
+            if i in factors and factors2:
+                commonfactors.append(i)
+        return factors2
+number = int(input("Insert the 1st number. "))
+number2 = int(input("Insert the 2nd number. "))
+factors = find_factors(number)
+factors2 = find_factors2(number2)
+gcf = commonfactors[-1]
+print(gcf)
+
+# if y and x have i as a factor append to common factors list.
