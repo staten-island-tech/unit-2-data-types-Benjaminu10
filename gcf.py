@@ -1,7 +1,7 @@
 def find_gcf(x, y):
     common_factors = []
     for i in range(1, min(x, y) + 1):
-        if x and y % i == 0 and y % i == 0:
+        if x % i == 0 and y % i == 0:
             common_factors.append(i)
     return common_factors[-1]
 number = int(input("Insert the 1st number: "))
