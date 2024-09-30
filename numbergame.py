@@ -18,4 +18,3 @@ n = random.randint(1,10)
 print(n)
 
 guess = input("Insert a guess from one to ten")
-if guess = n
